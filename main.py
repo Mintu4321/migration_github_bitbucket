@@ -9,9 +9,9 @@ from fetch_gitRep import get_all_repos
 from create_repo import create_bitbucket_repo
 
 
-BITBUCKET_USERNAME = "maxbasumatary-admin"  # Not your email
-BITBUCKET_APP_PASSWORD = os.getenv("PASSWORD")
-BITBUCKET_WORKSPACE = "maxbasumatary"  # Often same as your username
+BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME").strip()  # Not your email
+BITBUCKET_APP_PASSWORD = os.getenv("PASSWORD").strip()
+BITBUCKET_WORKSPACE = os.getenv("BITBUCKET_WORKSPACE").strip()  # Often same as your username
 
 
 REPO_NAMES = get_all_repos()
@@ -25,8 +25,8 @@ logging.basicConfig(
         ]
     )
 
-BITBUCKET_USER = os.getenv("BITBUCKET_USER")
-GITHUB_USER = os.getenv("GITHUB_USER")
+BITBUCKET_USER = os.getenv("BITBUCKET_USER").strip()
+GITHUB_USER = os.getenv("GITHUB_USER").strip()
 
 # Create bitbucket repo
 create_bitbucket_repo(BITBUCKET_WORKSPACE, REPO_NAMES, BITBUCKET_USERNAME, BITBUCKET_APP_PASSWORD, is_private=True)
