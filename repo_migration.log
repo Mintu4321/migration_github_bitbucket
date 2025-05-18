@@ -1,0 +1,676 @@
+2025-05-18 17:50:30,249 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp7qfhcf76
+2025-05-18 17:50:30,250 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/ansible_sample.git
+2025-05-18 17:50:33,256 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ansible_sample.git
+2025-05-18 17:50:33,256 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:50:33,268 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:50:35,345 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:50:35,356 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp_637ka_b
+2025-05-18 17:50:35,357 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Argocd.git
+2025-05-18 17:50:38,190 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/argocd.git
+2025-05-18 17:50:38,190 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:50:38,203 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:50:40,320 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:50:40,329 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpmpprfqpc
+2025-05-18 17:50:40,329 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/az_login.git
+2025-05-18 17:50:43,658 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/az_login.git
+2025-05-18 17:50:43,658 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:50:43,670 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:50:45,757 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:50:45,765 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp36wf3exx
+2025-05-18 17:50:45,765 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/CI.git
+2025-05-18 17:50:48,530 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ci.git
+2025-05-18 17:50:48,530 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:50:48,544 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:50:50,675 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:50:50,685 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp0v6kh6yq
+2025-05-18 17:50:50,685 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/groovy.git
+2025-05-18 17:50:53,452 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/groovy.git
+2025-05-18 17:50:53,452 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:50:53,465 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:50:55,596 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:50:55,606 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpn89x95w_
+2025-05-18 17:50:55,606 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/K3s_set_up-in-aws.git
+2025-05-18 17:50:58,695 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/k3s_set_up-in-aws.git
+2025-05-18 17:50:58,695 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:50:58,708 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:51:00,849 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:51:00,858 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpmfv7_569
+2025-05-18 17:51:00,859 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/langchain.git
+2025-05-18 17:51:03,580 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/langchain.git
+2025-05-18 17:51:03,580 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:51:03,594 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:51:05,881 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:51:05,891 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8osdkzje
+2025-05-18 17:51:05,892 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Langchain_chatbot.git
+2025-05-18 17:51:09,859 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/langchain_chatbot.git
+2025-05-18 17:51:09,859 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:51:09,869 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:51:11,980 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:51:11,995 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpw11dvw1v
+2025-05-18 17:51:11,995 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/projects-AI-ansible-docker.git
+2025-05-18 17:51:14,502 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/projects-ai-ansible-docker.git
+2025-05-18 17:51:14,502 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:51:14,518 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:51:16,823 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:51:16,833 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp0yhjn1jm
+2025-05-18 17:51:16,833 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/sample.git
+2025-05-18 17:51:19,662 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/sample.git
+2025-05-18 17:51:19,662 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:51:19,676 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:51:21,875 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:51:21,885 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8zjtlv9p
+2025-05-18 17:51:21,886 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/test123.git
+2025-05-18 17:51:24,828 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/test123.git
+2025-05-18 17:51:24,828 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:51:24,841 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:51:26,920 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 55, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:17,547 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmprp4aku8s
+2025-05-18 17:59:17,548 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/ansible_sample.git
+2025-05-18 17:59:20,620 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ansible_sample.git
+2025-05-18 17:59:20,620 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:20,632 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:22,811 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:22,823 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp1yd5_36i
+2025-05-18 17:59:22,824 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Argocd.git
+2025-05-18 17:59:25,592 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/argocd.git
+2025-05-18 17:59:25,593 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:25,606 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:27,723 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:27,731 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpeiyr73xk
+2025-05-18 17:59:27,731 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/az_login.git
+2025-05-18 17:59:31,006 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/az_login.git
+2025-05-18 17:59:31,006 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:31,017 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:33,078 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:33,087 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp1iqll5ig
+2025-05-18 17:59:33,087 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/CI.git
+2025-05-18 17:59:35,816 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ci.git
+2025-05-18 17:59:35,817 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:35,830 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:37,863 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:37,874 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8tchybl5
+2025-05-18 17:59:37,874 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/groovy.git
+2025-05-18 17:59:40,629 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/groovy.git
+2025-05-18 17:59:40,629 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:40,642 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:42,655 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:42,665 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmplhaw97t9
+2025-05-18 17:59:42,665 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/K3s_set_up-in-aws.git
+2025-05-18 17:59:45,722 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/k3s_set_up-in-aws.git
+2025-05-18 17:59:45,722 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:45,735 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:47,787 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:47,796 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8xcbxgxd
+2025-05-18 17:59:47,796 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/langchain.git
+2025-05-18 17:59:50,564 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/langchain.git
+2025-05-18 17:59:50,564 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:50,578 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:52,705 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:52,714 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpijlduqnp
+2025-05-18 17:59:52,714 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Langchain_chatbot.git
+2025-05-18 17:59:56,581 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/langchain_chatbot.git
+2025-05-18 17:59:56,581 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 17:59:56,591 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 17:59:58,714 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 17:59:58,724 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpns1tjsjv
+2025-05-18 17:59:58,724 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/projects-AI-ansible-docker.git
+2025-05-18 18:00:01,423 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/projects-ai-ansible-docker.git
+2025-05-18 18:00:01,423 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:00:01,440 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:00:05,350 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:00:05,358 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpv6qibje1
+2025-05-18 18:00:05,358 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/sample.git
+2025-05-18 18:00:08,179 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/sample.git
+2025-05-18 18:00:08,180 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:00:08,194 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:00:11,130 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:00:11,140 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmprjxulehl
+2025-05-18 18:00:11,140 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/test123.git
+2025-05-18 18:00:14,025 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/test123.git
+2025-05-18 18:00:14,025 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:00:14,038 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:00:16,192 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 56, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:14:46,216 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8628kud9
+2025-05-18 18:14:46,217 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/ansible_sample.git
+2025-05-18 18:14:49,398 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ansible_sample.git
+2025-05-18 18:14:49,398 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:14:49,410 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:14:51,579 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:14:51,591 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpledcai4s
+2025-05-18 18:14:51,591 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Argocd.git
+2025-05-18 18:14:54,357 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/argocd.git
+2025-05-18 18:14:54,357 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:14:54,370 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:14:56,488 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:14:56,498 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpugq9a_iv
+2025-05-18 18:14:56,498 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/az_login.git
+2025-05-18 18:14:59,725 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/az_login.git
+2025-05-18 18:14:59,725 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:14:59,736 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:15:02,737 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:15:02,748 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8m1uz8el
+2025-05-18 18:15:02,748 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/CI.git
+2025-05-18 18:16:56,361 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpl_w4ua96
+2025-05-18 18:16:56,362 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/ansible_sample.git
+2025-05-18 18:16:59,247 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ansible_sample.git
+2025-05-18 18:16:59,247 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:16:59,259 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:17:01,523 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:17:01,535 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp0k2gxwbd
+2025-05-18 18:17:01,535 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Argocd.git
+2025-05-18 18:17:04,304 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/argocd.git
+2025-05-18 18:17:04,304 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:17:04,317 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:17:06,478 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:17:06,488 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpdd7tp2nl
+2025-05-18 18:17:06,488 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/az_login.git
+2025-05-18 18:17:09,761 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/az_login.git
+2025-05-18 18:17:09,761 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:17:09,772 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:17:11,881 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:17:11,891 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpbbg7jpp5
+2025-05-18 18:17:11,892 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/CI.git
+2025-05-18 18:17:14,643 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/ci.git
+2025-05-18 18:17:14,643 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:17:14,657 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:17:16,790 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:17:16,800 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpv40sztrv
+2025-05-18 18:17:16,800 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/groovy.git
+2025-05-18 18:17:19,558 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary-admin/groovy.git
+2025-05-18 18:17:19,559 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:17:19,572 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:17:21,703 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 54, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain --mirror -- bitbucket
+  stderr: 'fatal: Could not read from remote repository.'
+2025-05-18 18:17:21,712 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpqfggc61z
+2025-05-18 18:17:21,712 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/K3s_set_up-in-aws.git
+2025-05-18 18:19:52,492 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpw5oe7tkm
+2025-05-18 18:19:52,493 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/ansible_sample.git
+2025-05-18 18:19:55,435 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/ansible_sample.git
+2025-05-18 18:19:55,435 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:19:55,447 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:20:03,226 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp_6gc20z_
+2025-05-18 18:20:03,226 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Argocd.git
+2025-05-18 18:20:05,965 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/argocd.git
+2025-05-18 18:20:05,965 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:20:05,978 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:20:14,598 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp8jfxkp0x
+2025-05-18 18:20:14,598 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/az_login.git
+2025-05-18 18:20:17,851 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/az_login.git
+2025-05-18 18:20:17,851 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:20:17,863 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:20:25,760 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp42f6shsb
+2025-05-18 18:20:25,761 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/CI.git
+2025-05-18 18:20:28,489 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/ci.git
+2025-05-18 18:20:28,490 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:20:28,503 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:20:35,942 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp4fy2jv8r
+2025-05-18 18:20:35,942 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/groovy.git
+2025-05-18 18:20:38,727 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/groovy.git
+2025-05-18 18:20:38,728 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:20:38,741 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:20:46,234 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpn5f_uck2
+2025-05-18 18:20:46,235 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/K3s_set_up-in-aws.git
+2025-05-18 18:20:49,894 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/k3s_set_up-in-aws.git
+2025-05-18 18:20:49,894 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:20:49,905 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:20:57,501 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpbd7oe_mp
+2025-05-18 18:20:57,502 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/langchain.git
+2025-05-18 18:21:00,230 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/langchain.git
+2025-05-18 18:21:00,231 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:21:00,252 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:21:08,584 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpwikoaf_z
+2025-05-18 18:21:08,584 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/Langchain_chatbot.git
+2025-05-18 18:21:12,712 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/langchain_chatbot.git
+2025-05-18 18:21:12,712 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:21:12,724 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:21:21,282 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmpesicahgb
+2025-05-18 18:21:21,282 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/projects-AI-ansible-docker.git
+2025-05-18 18:21:23,728 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/projects-ai-ansible-docker.git
+2025-05-18 18:21:23,728 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:21:23,753 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:21:26,271 [ERROR] ❌ Error during mirroring: Cmd('git') failed due to: exit code(1)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: the remote end hung up unexpectedly
+error: failed to push some refs to 'bitbucket.org:maxbasumatary/projects-ai-ansible-docker.git''
+Traceback (most recent call last):
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/main.py", line 57, in mirror_repo_via_ssh
+    repo.remotes.bitbucket.push(mirror=True, force=True)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 1210, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/remote.py", line 975, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/Users/tridibbasumatary/Downloads/bitbucker_to_github_mirror/venv/lib/python3.10/site-packages/git/cmd.py", line 834, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(1)
+  cmdline: git push --porcelain --mirror --force -- bitbucket
+  stderr: 'fatal: the remote end hung up unexpectedly
+error: failed to push some refs to 'bitbucket.org:maxbasumatary/projects-ai-ansible-docker.git''
+2025-05-18 18:21:26,285 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp670ebzna
+2025-05-18 18:21:26,285 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/sample.git
+2025-05-18 18:21:29,124 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/sample.git
+2025-05-18 18:21:29,125 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:21:29,140 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
+2025-05-18 18:21:37,037 [INFO] 📁 Created temporary directory: /var/folders/h2/945yd1kx3fjclx3wdz37www00000gn/T/tmp1tw73vsd
+2025-05-18 18:21:37,037 [INFO] 🔁 Cloning from GitHub via SSH: git@github.com:Mintu4321/test123.git
+2025-05-18 18:21:39,894 [INFO] 🔗 Adding Bitbucket remote: git@bitbucket.org:maxbasumatary/test123.git
+2025-05-18 18:21:39,894 [INFO] 📤 Pushing all refs to Bitbucket...
+2025-05-18 18:21:39,908 [INFO] ✅ Repository mirrored successfully from GitHub to Bitbucket.
