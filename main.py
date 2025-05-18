@@ -25,8 +25,8 @@ logging.basicConfig(
         ]
     )
 
-BITBUCKET_USER = "maxbasumatary"
-GITHUB_USER = "Mintu4321"
+BITBUCKET_USER = os.getenv("BITBUCKET_USER")
+GITHUB_USER = os.getenv("GITHUB_USER")
 
 # Create bitbucket repo
 create_bitbucket_repo(BITBUCKET_WORKSPACE, REPO_NAMES, BITBUCKET_USERNAME, BITBUCKET_APP_PASSWORD, is_private=True)
