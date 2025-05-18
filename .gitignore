@@ -1,3 +1,8 @@
+# Ignore virtual environments
 venv/
+
+# Ignore environment variables file
 .env
+
+# Ignore logs
 *.log
