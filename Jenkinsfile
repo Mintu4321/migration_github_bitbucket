@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Mirror Repos') {
             steps {
-                mirrorGitHubToBitbucket('github_to_bit_bucket/main.py')
+                mirrorGitHub('github_to_bit_bucket/main.py')
             }
         }
     }
