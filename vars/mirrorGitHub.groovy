@@ -1,8 +1,8 @@
-import groovy.json.JsonSlurper
+import groovy.json.JsonSlurperClassic
 
 def call(String scriptName) {
     withCredentials([string(credentialsId: 'bitbucket-github-json', variable: 'CRED_JSON')]) {
-        def creds = new JsonSlurper().parseText(env.CRED_JSON)
+        def creds = new JsonSlurperClassic().parseText(env.CRED_JSON)
 
         def envVars = [
             "BITBUCKET_USERNAME=${creds.BITBUCKET_USERNAME}",
