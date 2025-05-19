@@ -17,7 +17,7 @@ def call(String scriptName) {
         withEnv(envVars) {
             sh """
             python3 -m pip install --upgrade pip
-            pip3 install -r github_to_bit_bucket/requirements.txt
+            pip3 install -r requirements.txt
             python3 ${scriptName}
             """
         }
