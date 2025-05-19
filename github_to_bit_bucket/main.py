@@ -5,13 +5,13 @@ import time
 import git  # GitPython
 import tempfile
 import logging
-from bit_bucket_to_github.fetch_gitRep import get_all_repos
-from bit_bucket_to_github.create_repo import create_bitbucket_repo
+from fetch_gitRep import get_all_repos
+from create_repo import create_bitbucket_repo
 
 
-BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME").strip()  # Not your email
-BITBUCKET_APP_PASSWORD = os.getenv("PASSWORD").strip()
-BITBUCKET_WORKSPACE = os.getenv("BITBUCKET_WORKSPACE").strip()  # Often same as your username
+BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME")  # Not your email
+BITBUCKET_APP_PASSWORD = os.getenv("PASSWORD")
+BITBUCKET_WORKSPACE = os.getenv("BITBUCKET_WORKSPACE") # Often same as your username
 
 
 REPO_NAMES = get_all_repos()
@@ -25,8 +25,8 @@ logging.basicConfig(
         ]
     )
 
-BITBUCKET_USER = os.getenv("BITBUCKET_USER").strip()
-GITHUB_USER = os.getenv("GITHUB_USER").strip()
+BITBUCKET_USER = "maxbasumatary"
+GITHUB_USER = os.getenv("GITHUB_USER")
 
 # Create bitbucket repo
 create_bitbucket_repo(BITBUCKET_WORKSPACE, REPO_NAMES, BITBUCKET_USERNAME, BITBUCKET_APP_PASSWORD, is_private=True)

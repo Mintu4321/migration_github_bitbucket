@@ -13,7 +13,6 @@ BITBUCKET_WORKSPACE = os.getenv("BITBUCKET_WORKSPACE")
 
 REPO_NAMES = get_all_repos()
 
-
 def create_bitbucket_repo(workspace, repo_slug, username, app_password, is_private=True):
 
     for repo in repo_slug:
@@ -36,4 +35,5 @@ def create_bitbucket_repo(workspace, repo_slug, username, app_password, is_priva
         else:
             print(f"❌ Failed to create repository: {response.status_code}")
             print(response.text)
+            break
 
