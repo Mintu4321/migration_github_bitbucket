@@ -1,0 +1,13 @@
+@Library('my_shared_library') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Mirror Repos') {
+            steps {
+                runPythonWithJson('github_to_bit_bucket/main.py')
+            }
+        }
+    }
+}
