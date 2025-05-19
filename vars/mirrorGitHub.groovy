@@ -15,7 +15,11 @@ def call(String scriptName) {
         echo "🔐 Using user: ${creds.BITBUCKET_USERNAME} and GitHub: ${creds.GITHUB_USER}"
 
         withEnv(envVars) {
-            sh "python3 ${scriptName}"
+            sh """
+            python3 -m pip install --upgrade pip
+            pip3 install -r github_to_bit_bucket/requirements.txt
+            python3 ${scriptName}
+            """
         }
     }
 }
