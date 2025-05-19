@@ -5,8 +5,8 @@ import time
 import git  # GitPython
 import tempfile
 import logging
-from fetch_gitRep import get_all_repos
-from create_repo import create_bitbucket_repo
+from bit_bucket_to_github.fetch_gitRep import get_all_repos
+from bit_bucket_to_github.create_repo import create_bitbucket_repo
 
 
 BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME").strip()  # Not your email
@@ -20,7 +20,7 @@ logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s",
         handlers=[
-            logging.FileHandler("repo_migration.log"),
+            logging.FileHandler("../repo_migration.log"),
             logging.StreamHandler()
         ]
     )
@@ -70,8 +70,6 @@ def mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url):
 
 
 # for bitbucket_repo, github_repo in REPOS_TO_MIRROR:
-
-
 
 for repo in REPO_NAMES:
     repo_name = repo
