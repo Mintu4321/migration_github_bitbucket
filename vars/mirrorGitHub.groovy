@@ -8,7 +8,8 @@ def call(String scriptName) {
             "BITBUCKET_USERNAME=${creds.BITBUCKET_USERNAME}",
             "PASSWORD=${creds.BITBUCKET_APP_PASSWORD}",
             "BITBUCKET_WORKSPACE=${creds.BITBUCKET_WORKSPACE}",
-            "GITHUB_USER=${creds.GITHUB_USER}"
+            "GITHUB_USER=${creds.GITHUB_USER}",
+            "GITHUB_TOKEN=${creds.GITHUB_TOKEN}"
         ]
 
         echo "📢 Executing Python script: ${scriptName}"
