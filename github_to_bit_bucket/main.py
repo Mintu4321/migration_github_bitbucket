@@ -12,6 +12,7 @@ from create_repo import create_bitbucket_repo
 BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME")  # Not your email
 BITBUCKET_APP_PASSWORD = os.getenv("PASSWORD")
 BITBUCKET_WORKSPACE = os.getenv("BITBUCKET_WORKSPACE") # Often same as your username
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 
 REPO_NAMES = get_all_repos()
@@ -75,7 +76,10 @@ for repo in REPO_NAMES:
     repo_name = repo
     bitbucket_repo_name = repo_name.lower()
 
-    github_ssh_url = f"git@github.com:{GITHUB_USER}/{repo_name}.git"
     bitbucket_ssh_url = f"git@bitbucket.org:{BITBUCKET_USER}/{bitbucket_repo_name}.git"
+    github_ssh_url = f"https://{GITHUB_USER}:{GITHUB_TOKEN}@github.com/{GITHUB_USER}/{repo_name}.git"
+
+    # github_ssh_url = f"git@github.com:{GITHUB_USER}/{repo_name}.git"
+    # bitbucket_ssh_url = f"git@bitbucket.org:{BITBUCKET_USER}/{bitbucket_repo_name}.git"
 
     mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
