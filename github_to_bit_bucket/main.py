@@ -93,6 +93,7 @@ import time
 import tempfile
 import logging
 import git  # GitPython
+import requests
 
 from fetch_gitRep import get_all_repos
 from create_repo import create_bitbucket_repo
