@@ -73,12 +73,6 @@ def mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url):
         shutil.rmtree(temp_dir)
         print("🧹 Temporary files cleaned up.")
 
-repo_status_map = is_bitbucket_repo_empty_api(
-    BITBUCKET_WORKSPACE,
-    [repo.lower() for repo in REPO_NAMES],
-    BITBUCKET_USERNAME,
-    BITBUCKET_APP_PASSWORD
-)
 
 def get_latest_commit_sha_from_url(git_url):
     try:
@@ -113,6 +107,13 @@ def is_bitbucket_repo_empty_api(workspace, repo_slugs, username, app_password):
             empty_status[slug] = True
 
     return empty_status
+
+repo_status_map = is_bitbucket_repo_empty_api(
+    BITBUCKET_WORKSPACE,
+    [repo.lower() for repo in REPO_NAMES],
+    BITBUCKET_USERNAME,
+    BITBUCKET_APP_PASSWORD
+)
 
 # for bitbucket_repo, github_repo in REPOS_TO_MIRROR:
 
