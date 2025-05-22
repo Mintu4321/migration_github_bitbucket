@@ -30,7 +30,7 @@ jobs:
 
       - name: Run migration script
         run: |
-          python main.py
+          python github_to_bit_bucket/main.py
           
         env:
           PASSWORD: ${{ secrets.BITBUCKET_APP_PASSWORD }}
