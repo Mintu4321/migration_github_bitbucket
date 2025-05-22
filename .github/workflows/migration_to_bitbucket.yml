@@ -34,7 +34,7 @@ jobs:
           
         env:
           PASSWORD: ${{ secrets.BITBUCKET_APP_PASSWORD }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GITHUB_USER: ${{ inputs.GITHUB_USER }}
           BITBUCKET_USER: ${{ inputs.BITBUCKET_USER }}
           BITBUCKET_USERNAME: ${{ secrets.BITBUCKETUSERNAME }}
