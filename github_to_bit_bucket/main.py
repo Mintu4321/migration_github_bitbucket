@@ -80,6 +80,7 @@ for repo in REPO_NAMES:
     github_ssh_url = f"https://{GITHUB_USER}:{GITHUB_TOKEN}@github.com/{GITHUB_USER}/{repo_name}.git"
 
     # github_ssh_url = f"git@github.com:{GITHUB_USER}/{repo_name}.git"
-    bitbucket_ssh_url = f"https://{BITBUCKET_USER}:{BITBUCKET_APP_PASSWORD}@bitbucket.org/{BITBUCKET_USER}/{bitbucket_repo_name}.git"
+    bitbucket_ssh_url = f"https://{BITBUCKET_USERNAME}:{BITBUCKET_APP_PASSWORD}@bitbucket.org/{BITBUCKET_WORKSPACE}/{bitbucket_repo_name}.git"
+
 
     mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
