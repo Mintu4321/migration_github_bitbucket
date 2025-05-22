@@ -74,6 +74,40 @@ def mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url):
         print("🧹 Temporary files cleaned up.")
 
 
+def get_latest_commit_sha_from_url(git_url):
+    try:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            repo = git.Repo.clone_from(git_url, tmpdir)
+            return repo.head.commit.hexsha
+    except Exception as e:
+        logging.warning(f"Could not fetch commit SHA from {git_url}: {e}")
+        return None
+            
+
+def is_bitbucket_repo_empty_api(workspace, repo_slugs, username, app_password):
+    """
+    For a list of Bitbucket repo slugs, return a dict:
+    { 'repo_slug': True/False }  where True = empty, False = has data
+    """
+    import requests
+
+    empty_status = {}
+
+    for slug in repo_slugs:
+        url = f"https://api.bitbucket.org/2.0/repositories/{workspace}/{slug}/commits"
+        try:
+            response = requests.get(url, auth=(username, app_password))
+            if response.status_code == 200:
+                data = response.json()
+                empty_status[slug] = len(data.get("values", [])) == 0
+            else:
+                # If repo doesn't exist or some error, assume it's empty
+                empty_status[slug] = True
+        except Exception:
+            empty_status[slug] = True
+
+    return empty_status
+
 # for bitbucket_repo, github_repo in REPOS_TO_MIRROR:
 
 for repo in REPO_NAMES:
@@ -85,102 +119,23 @@ for repo in REPO_NAMES:
 
     # github_ssh_url = f"git@github.com:{GITHUB_USER}/{repo_name}.git"
     bitbucket_ssh_url = f"https://{BITBUCKET_USERNAME}:{BITBUCKET_APP_PASSWORD}@bitbucket.org/{BITBUCKET_WORKSPACE}/{bitbucket_repo_name}.git"
+    github_sha = get_latest_commit_sha_from_url(github_ssh_url)
+    bitbucket_sha = get_latest_commit_sha_from_url(bitbucket_ssh_url)
+    
+    if repo_status_map.get(bitbucket_repo_name, True):  # True means it's empty
+        print(f"🚀 Pushing {repo_name} to Bitbucket (empty repo)...")
+        mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
+
+    elif github_sha != bitbucket_sha:
+        print(f"🗂️New file {repo_name} detected, hence mirroring the file")
+        mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
+
+    else:
+        print(f"⏭️ Skipping {repo_name}: Bitbucket repo already has data.")
 
 
-    mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
+
+    # mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
 
 
-
-# import os
-# import shutil
-# import time
-# import tempfile
-# import logging
-# import git  # GitPython
-# import requests
-
-# from fetch_gitRep import get_all_repos
-# from create_repo import create_bitbucket_repo
-# from dotenv import load_dotenv
-# load_dotenv()
-
-# # Load credentials from .env
-# BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME")
-# BITBUCKET_APP_PASSWORD = os.getenv("PASSWORD")
-# BITBUCKET_WORKSPACE = os.getenv("BITBUCKET_WORKSPACE")
-# GITHUB_USER = os.getenv("GITHUB_USER")
-# GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-
-# # Fetch list of GitHub repos to migrate
-# REPO_NAMES = get_all_repos()
-
-# # Setup logging
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format="%(asctime)s [%(levelname)s] %(message)s",
-#     handlers=[
-#         logging.FileHandler("repo_migration.log"),
-#         logging.StreamHandler()
-#     ]
-# )
-
-# def create_bitbucket_repo(workspace, repo_slugs, username, app_password, is_private=True):
-#     for repo in repo_slugs:
-#         repo_slug = repo.lower()
-#         url = f"https://api.bitbucket.org/2.0/repositories/{workspace}/{repo_slug}"
-#         payload = {
-#             "mainbranch": {"name": "main"},
-#             "scm": "git",
-#             "is_private": is_private
-#         }
-
-#         print(f"🚀 Creating repository '{repo}' in Bitbucket workspace '{workspace}'...")
-#         response = requests.post(url, json=payload, auth=(username, app_password))
-#         time.sleep(1)
-
-#         if response.status_code == 201:
-#             print("✅ Repository created successfully!")
-#         elif response.status_code == 400 and 'repository with this Slug already exists' in response.text:
-#             print("ℹ️ Repository already exists.")
-#         else:
-#             print(f"❌ Failed to create repository: {response.status_code}")
-#             print(response.text)
-
-# def mirror_repo(github_url, bitbucket_url):
-#     temp_dir = tempfile.mkdtemp()
-#     logging.info(f"📁 Created temporary directory: {temp_dir}")
-
-#     try:
-#         logging.info(f"🔁 Cloning from GitHub: {github_url}")
-#         print(f"🔁 Cloning from GitHub: {github_url}")
-#         repo = git.Repo.clone_from(github_url, temp_dir, mirror=True)
-
-#         logging.info(f"🔗 Adding Bitbucket remote: {bitbucket_url}")
-#         print(f"🔗 Adding Bitbucket remote: {bitbucket_url}")
-#         repo.create_remote('bitbucket', bitbucket_url)
-
-#         logging.info("📤 Pushing all refs to Bitbucket...")
-#         print("📤 Pushing all refs to Bitbucket...")
-#         repo.remotes.bitbucket.push(mirror=True, force=True)
-
-#         logging.info("✅ Mirroring complete.")
-#         print("✅ Repository mirrored successfully from GitHub to Bitbucket.")
-
-#     except Exception as e:
-#         logging.error(f"❌ Error during mirroring: {e}", exc_info=True)
-#     finally:
-#         shutil.rmtree(temp_dir)
-#         print("🧹 Temporary files cleaned up.")
-
-# # 1. Create Bitbucket repos
-# create_bitbucket_repo(BITBUCKET_WORKSPACE, REPO_NAMES, BITBUCKET_USERNAME, BITBUCKET_APP_PASSWORD)
-
-# # 2. Mirror each repo from GitHub to Bitbucket
-# for repo_name in REPO_NAMES:
-#     bitbucket_repo_name = repo_name.lower()
-
-#     github_url = f"https://{GITHUB_USER}:{GITHUB_TOKEN}@github.com/{GITHUB_USER}/{repo_name}.git"
-#     bitbucket_url = f"https://{BITBUCKET_USERNAME}:{BITBUCKET_APP_PASSWORD}@bitbucket.org/{BITBUCKET_WORKSPACE}/{bitbucket_repo_name}.git"
-
-#     mirror_repo(github_url, bitbucket_url)
 
