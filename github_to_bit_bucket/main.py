@@ -21,7 +21,7 @@ logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s",
         handlers=[
-            logging.FileHandler("../repo_migration.log"),
+            logging.FileHandler("repo_migration.log"),
             logging.StreamHandler()
         ]
     )
