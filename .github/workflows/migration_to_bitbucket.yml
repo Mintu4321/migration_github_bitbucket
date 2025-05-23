@@ -50,5 +50,5 @@ jobs:
         run: |
             REPO_NAME=$(basename "${GITHUB_REPOSITORY}")
             df -h "/home/adminuser/actions-runner/_work/${REPO_NAME}"
-            rm - rf "/home/adminuser/actions-runner/_work/${REPO_NAME}"
+            rm -rf "/home/adminuser/actions-runner/_work/${REPO_NAME}"
       
