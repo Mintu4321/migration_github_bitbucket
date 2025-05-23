@@ -82,7 +82,7 @@ def get_latest_commit_sha_from_url(git_url):
             repo = git.Repo.clone_from(git_url, tmpdir)
             return repo.head.commit.hexsha
     except Exception as e:
-        logging.warning(f"Could not fetch commit SHA from {git_url}: {e}")
+        logging.warning(f"Could not fetch commit SHA: {e}")
         return None
             
 
