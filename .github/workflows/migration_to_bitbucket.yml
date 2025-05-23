@@ -49,6 +49,8 @@ jobs:
       - name: check repo size and clear the repo 
         run: |
             REPO_NAME=$(basename "${GITHUB_REPOSITORY}")
-            df -h "/home/adminuser/actions-runner/_work/${REPO_NAME}"
-            rm -rf "/home/adminuser/actions-runner/_work/${REPO_NAME}"
+            command = df -h "/home/adminuser/actions-runner/_work/${REPO_NAME}"
+            echo "Size of the folder is: $(du -sh command | cut -f1)"
+
+            
       
