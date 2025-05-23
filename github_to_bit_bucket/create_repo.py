@@ -31,9 +31,9 @@ def create_bitbucket_repo(workspace, repo_slug, username, app_password, is_priva
         time.sleep(2)
         if response.status_code == 201 or response.status_code == 201:
             print("✅ Repository created successfully!")
-            # print("📎 Clone URL (SSH):", response.json().get("links", {}).get("clone", [])[1]["href"])
+            
         else:
             print(f"❌ Failed to create repository: {response.status_code}")
-            print(response.text)
+            # print(response.text)
             break
 
