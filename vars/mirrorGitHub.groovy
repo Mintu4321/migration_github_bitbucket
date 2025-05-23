@@ -2,7 +2,17 @@ import groovy.json.JsonSlurperClassic
 
 def call(String scriptName) {
     withCredentials([string(credentialsId: 'bitbucket-github-json', variable: 'CRED_JSON')]) {
-        def creds = new JsonSlurperClassic().parseText(env.CRED_JSON)
+        def creds
+
+        try {
+
+            creds = new JsonSlurperClassic().parseText(env.CRED_JSON)
+
+        } catch (Exception e) {
+
+            error "❌ Failed to parse credentials JSON: ${e.message}"
+
+        }
 
         def envVars = [
             "BITBUCKET_USERNAME=${creds.BITBUCKET_USERNAME}",
@@ -18,6 +28,8 @@ def call(String scriptName) {
         withEnv(envVars) {
             sh """
             python3 -m pip install --upgrade pip
+            python3 -m venv venv
+            source venv/bin/activate
             pip3 install -r requirements.txt
             python3 ${scriptName}
             """
