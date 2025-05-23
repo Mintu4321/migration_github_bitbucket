@@ -34,6 +34,6 @@ def create_bitbucket_repo(workspace, repo_slug, username, app_password, is_priva
             
         else:
             print(f"❌ Failed to create repository: {response.status_code}")
-            # print(response.text)
+            print(response.text)
             
 
