@@ -129,7 +129,7 @@ for repo in REPO_NAMES:
         mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
 
     elif github_sha != bitbucket_sha:
-        print(f"🗂️New file {repo_name} detected, hence mirroring the file")
+        print(f"🗂️ New file {repo_name} detected, hence mirroring the file")
         mirror_repo_via_ssh(github_ssh_url, bitbucket_ssh_url)  # ✅ inside loop
 
     else:
