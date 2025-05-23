@@ -28,12 +28,12 @@ def create_bitbucket_repo(workspace, repo_slug, username, app_password, is_priva
         }
         print(f"🚀 Creating repository '{repo}' in workspace '{workspace}'...")
         response = requests.post(url, json=payload, auth=HTTPBasicAuth(username, app_password))
-        time.sleep(2)
+        time.sleep(1)
         if response.status_code == 201 or response.status_code == 201:
             print("✅ Repository created successfully!")
             
         else:
             print(f"❌ Failed to create repository: {response.status_code}")
             # print(response.text)
-            break
+            
 
