@@ -44,4 +44,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
          name: repo-migration-log
-         path: repo_migration.log
+         path: repo_migration.log 
+
+      - name: check repo size and clear the repo 
+        run: |
+            REPO_NAME=$(basename "${GITHUB_REPOSITORY}")
+            df -h "/home/adminuser/actions-runner/_work/${REPO_NAME}"
+            rm - rf "/home/adminuser/actions-runner/_work/${REPO_NAME}"
+      
