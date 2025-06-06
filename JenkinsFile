@@ -4,6 +4,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout Repo') {
+            steps {
+                git url: 'https://github.com/Mintu4321/migration_github_bitbucket.git', branch: 'main'
+            }
+        }
         stage('Mirror Repos') {
             steps {
                 mirrorGitHub('github_to_bit_bucket/main.py')
